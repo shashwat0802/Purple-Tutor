@@ -1,0 +1,311 @@
+@import url("./media.css");
+/* global styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn-nav {
+  color: #fff !important;
+  background: linear-gradient(135deg, #754799 0%, rgba(255, 51, 134, 0.9) 100%);
+  border-radius: 35px;
+  border: none;
+  padding: 0.65rem 2.5rem;
+  font-size: 1rem !important;
+  font-weight: 500;
+}
+
+.btn-second {
+  color: #fff !important;
+  background: linear-gradient(135deg, #ffc084 0%, #7f2982 100%);
+  border-radius: 35px;
+  border: none;
+  padding: 0.65rem 2.5rem;
+  font-size: 1rem !important;
+  font-weight: 500;
+}
+.centered {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(255, 255, 255) !important;
+}
+
+.gradient-border {
+  border: 2.5px solid transparent;
+  border-image: linear-gradient(
+    135deg,
+    #754799 0%,
+    rgba(255, 51, 134, 0.9) 100%
+  );
+  border-image-slice: 1;
+}
+
+.left-top-bdr {
+  border-left: 2.5px solid transparent;
+  border-image: linear-gradient(
+    135deg,
+    #754799 0%,
+    rgba(255, 51, 134, 0.9) 80%
+  );
+  border-image-slice: 1;
+  position: absolute !important;
+  top: 80%;
+  bottom: 0;
+  left: 0;
+}
+
+.left-bottom-bdr {
+  border-left: 2.5px solid transparent;
+  border-image: linear-gradient(
+    135deg,
+    #754799 0%,
+    rgba(255, 51, 134, 0.9) 80%
+  );
+  border-image-slice: 1;
+  position: absolute !important;
+  top: 0;
+  bottom: 85%;
+  left: 0;
+}
+/* global styling end */
+
+.helpline {
+  height: 50px;
+  width: 100%;
+  color: #ffffff;
+  font-family: Lato, sans-serif;
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 24px;
+  background-color: #41013d;
+  font-weight: 100;
+}
+
+/* navbar styling */
+.navbar-nav .nav-item .nav-link {
+  color: #000000;
+  text-decoration-line: none;
+  font-size: 1.15rem;
+  line-height: 24px;
+  font-family: Lato bold, sans-serif;
+  font-weight: 500;
+  margin: auto 0.35rem;
+}
+
+.navbar-brand img {
+  width: calc(115px + 3vw);
+  height: calc(50px + 1.85vw);
+}
+
+/* navbar styling end */
+
+/* main banner styling */
+.main-banner {
+  height: 80vh;
+  background-color: antiquewhite;
+  overflow: hidden;
+}
+
+.banner-content h1 {
+  font-size: calc(20px + 2vw);
+  letter-spacing: 1px;
+  font-family: Lato, sans-serif;
+  color: #fff;
+}
+
+.banner-content h2 {
+  font-size: calc(14px + 1.25vw);
+  font-family: Lato, sans-serif;
+  color: #fff;
+}
+
+.banner-content a {
+  font-size: calc(11px + 0.45vw) !important;
+}
+
+/* secondary area */
+
+/* .icon {
+  background: linear-gradient(135deg, #754799 0%, #ff3386 100%);
+  width: calc(40px + 3vw);
+  height: calc(40px + 3vw);
+  border-radius: 50%;
+} */
+
+.second-area {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.icon img {
+  width: calc(40px + 3vw);
+  height: calc(40px + 3vw);
+}
+
+.second-area p {
+  font-size: calc(12px + 0.45vw);
+  width: calc(72% + 8.75vw);
+  color: #232323;
+}
+
+.second-area h1 {
+  background: linear-gradient(135deg, #754799 0%, rgba(255, 51, 134, 0.9) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: calc(18px + 1.25vw);
+}
+
+.underline {
+  width: calc(200px + 15vw);
+  height: 2px;
+  background-color: #561273;
+}
+
+.second-area h2 {
+  color: #4d1a6c;
+  font-size: calc(12px + 1.15vw);
+}
+
+/* third area */
+.third-area {
+  background-color: #f7f7f7;
+}
+
+.image img {
+  max-width: 300px;
+  max-height: 200px;
+}
+.third-area p {
+  font-size: calc(12px + 0.45vw);
+  width: calc(75% + 8.5vw);
+  background: linear-gradient(135deg, #754799 0%, rgba(255, 51, 134, 0.9) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  font-family: Lato bold, sans-serif;
+  font-weight: 600;
+}
+
+.third-area h1 {
+  background: linear-gradient(135deg, #754799 0%, rgba(255, 51, 134, 0.9) 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: calc(18px + 1.25vw);
+}
+
+/* fouth area styling */
+
+.fourth-area h1 {
+  background: linear-gradient(135deg, #754799 0%, rgba(255, 51, 134, 0.9) 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: calc(18px + 1.25vw);
+}
+
+.fourth-area p {
+  font-size: calc(12px + 0.75vw);
+}
+
+.fourth-area div {
+  position: relative;
+  width: 95%;
+  max-height: 100px;
+}
+
+.fourth-area img {
+  width: calc(40px + 2.25vw);
+  height: calc(40px + 2.25vw);
+  position: absolute;
+}
+
+.icons-left {
+  top: 12px;
+  left: -7%;
+}
+
+.icons-right {
+  top: 10px;
+  right: -8%;
+}
+
+/* individual icon styling */
+.icon-1 {
+  top: -5px;
+}
+
+.icon-2 {
+  top: 22px;
+}
+
+/* fifth area styling */
+.fifth-area h1 {
+  background: linear-gradient(135deg, #754799 0%, rgba(255, 51, 134, 0.9) 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: calc(18px + 1.25vw);
+}
+
+.fifth-area p {
+  font-size: calc(12px + 0.35vw);
+}
+
+/* card styling */
+.card {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  background: linear-gradient(135deg, #754799 0%, rgba(255, 51, 134, 0.9) 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card-subtitle {
+  background-color: #fee6ec;
+  color: #4d1a6c;
+  width: calc(130px + 2.25vw);
+  border-radius: 20px;
+  font-size: calc(12px + 0.35vw);
+}
+
+.card-text {
+  color: #464646;
+}
+
+/* footer styling */
+footer {
+  background-color: #4d1a6c;
+  color: #fff;
+}
+
+footer h5 {
+  font-size: calc(14px + 0.35vw);
+}
+
+footer p {
+  font-size: calc(12px + 0.35vw);
+}
+
+.end-line {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}
+
+.footer-end img {
+  width: 25px;
+  height: 25px;
+}

@@ -1,0 +1,22 @@
+@media (max-width: 576px) {
+  .main-banner {
+    height: 50vh !important;
+  }
+  .navbar {
+    background: linear-gradient(
+      135deg,
+      #754799 0%,
+      rgba(255, 51, 134, 0.9) 100%
+    ) !important;
+  }
+  .fifth-area {
+    margin-top: 350px;
+  }
+}
+
+/*  */
+@media (min-width: 576px) {
+  .fifth-area {
+    margin-top: 500px;
+  }
+}
