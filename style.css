@@ -109,7 +109,7 @@
 
 /* main banner styling */
 .main-banner {
-  height: 80vh;
+  height: 85vh;
   /* background-image: url("./img/icon-assets/hero-image\ 1920X1080.png");
   background-position: bottom;
   background-size: 100% 100%;
@@ -251,7 +251,7 @@
 }
 
 .fourth-area p {
-  font-size: calc(12px + 0.75vw);
+  font-size: calc(11px + 0.75vw);
 }
 
 .fourth-area div {
@@ -261,8 +261,8 @@
 }
 
 .fourth-area img {
-  width: calc(40px + 2.25vw);
-  height: calc(40px + 2.25vw);
+  width: calc(40px + 2.05vw);
+  height: calc(40px + 2.05vw);
   position: absolute;
 }
 

@@ -27,4 +27,25 @@
     width: 100%;
     z-index: 1000 !important;
   }
+  .icons-left {
+    top: 3px !important;
+    left: -3.5% !important;
+  }
+
+  .icons-right {
+    top: 4px !important;
+    right: -3.5% !important;
+  }
+
+  /* individual icon styling */
+  .icon-1 {
+    top: -10px !important;
+  }
+
+  .icon-2 {
+    top: 11px !important;
+  }
+  .icon-5 {
+    top: 15px !important;
+  }
 }
