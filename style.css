@@ -110,7 +110,10 @@
 /* main banner styling */
 .main-banner {
   height: 80vh;
-  background-color: antiquewhite;
+  background-image: url("./img/icon-assets/hero-image\ 1920X1080.png");
+  background-position: bottom;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   overflow: hidden;
 }
 
