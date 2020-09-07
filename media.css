@@ -29,12 +29,12 @@
   }
   .icons-left {
     top: 3px !important;
-    left: -3.5% !important;
+    left: -4.25% !important;
   }
 
   .icons-right {
-    top: 4px !important;
-    right: -3.5% !important;
+    top: 12px !important;
+    right: -4.5% !important;
   }
 
   /* individual icon styling */
@@ -47,5 +47,8 @@
   }
   .icon-5 {
     top: 15px !important;
+  }
+  .fourth-area div {
+    width: 75% !important;
   }
 }
