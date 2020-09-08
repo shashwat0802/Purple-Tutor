@@ -287,6 +287,10 @@
 }
 
 /* fifth area styling */
+.fifth-area {
+  background-color: #f7f7f7;
+}
+
 .fifth-area h1 {
   background: linear-gradient(135deg, #754799 0%, rgba(255, 51, 134, 0.9) 80%);
   -webkit-background-clip: text;
@@ -346,4 +350,52 @@ footer p {
 .footer-end img {
   width: 25px;
   height: 25px;
+}
+
+/* testimonial styling */
+
+.testimonial-wrapper {
+  width: calc(275px + 19vw);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.profile-pic {
+  width: calc(48px + 2.05vw);
+  height: calc(48px + 2.05vw);
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+.bottom-area {
+  background-color: #fde5ee;
+  opacity: 0.8;
+}
+
+.testimonial h1 {
+  background: linear-gradient(135deg, #754799 0%, rgba(255, 51, 134, 0.9) 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: calc(18px + 1.25vw);
+}
+
+.country {
+  background: linear-gradient(135deg, #754799 0%, rgba(255, 51, 134, 0.9) 100%);
+  border-radius: 35px;
+  color: #fff;
+  text-align: center;
+}
+
+.name {
+  color: #4d1a6c;
+}
+
+.course {
+  color: #4d1a6c;
+}
+
+.bottom-area p {
+  color: #464646;
+  font-size: calc(11px + 0.45vw);
+  font-family: Lato, sans-serif;
 }
