@@ -252,6 +252,7 @@
 
 .fourth-area p {
   font-size: calc(11px + 0.75vw);
+  font-weight: 500;
 }
 
 .fourth-area div {
