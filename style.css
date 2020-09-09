@@ -366,16 +366,22 @@ footer p {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
-.profile-pic {
+.profile-pic img {
   width: calc(48px + 2.05vw);
   height: calc(48px + 2.05vw);
-  background-color: #000000;
+
+  object-fit: cover;
   border-radius: 50%;
 }
 
 .bottom-area {
   background-color: #fde5ee;
   opacity: 0.8;
+  height: 60%;
+}
+
+.upper-area {
+  height: 40%;
 }
 
 .testimonial h1 {
