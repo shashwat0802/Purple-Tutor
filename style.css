@@ -399,3 +399,8 @@ footer p {
   font-size: calc(11px + 0.45vw);
   font-family: Lato, sans-serif;
 }
+
+.test-div {
+  display: flex;
+  overflow-x: scroll;
+}
