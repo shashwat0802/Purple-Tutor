@@ -353,9 +353,16 @@ footer p {
 }
 
 /* testimonial styling */
+.testimonial {
+  overflow-x: scroll;
+}
+
+.testimonial:-webkit-scrollbar {
+  display: none !important;
+}
 
 .testimonial-wrapper {
-  width: calc(275px + 19vw);
+  min-width: calc(275px + 19vw);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 

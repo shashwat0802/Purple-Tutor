@@ -5,7 +5,7 @@ fetch(`json/India.json`)
     data.forEach((info) => {
       // testimonial wrapper
       var testimonial = document.createElement("div")
-      testimonial.className = "testimonial-wrapper mx-auto"
+      testimonial.className = "testimonial-wrapper m-md-4 m-3"
       // upper area
       var topRow = document.createElement("div")
       topRow.className = "upper-area p-2 d-flex justify-content-md-center"
