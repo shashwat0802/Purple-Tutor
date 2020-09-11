@@ -51,4 +51,8 @@
   .fourth-area div {
     width: 75% !important;
   }
+  /* card */
+  .card {
+    height: 210px;
+  }
 }

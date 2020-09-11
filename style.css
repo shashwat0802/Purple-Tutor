@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Lato, sans-serif !important;
 }
 
 .btn-nav {
@@ -112,11 +113,6 @@
 /* main banner styling */
 .main-banner {
   height: 85vh;
-  /* background-image: url("./img/icon-assets/hero-image\ 1920X1080.png");
-  background-position: bottom;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  overflow: hidden; */
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -171,13 +167,6 @@
 }
 
 /* secondary area */
-
-/* .icon {
-  background: linear-gradient(135deg, #754799 0%, #ff3386 100%);
-  width: calc(40px + 3vw);
-  height: calc(40px + 3vw);
-  border-radius: 50%;
-} */
 
 .second-area {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
@@ -339,8 +328,14 @@ footer h5 {
   font-size: calc(14px + 0.35vw);
 }
 
-footer p {
+footer a {
   font-size: calc(12px + 0.35vw);
+  text-decoration-line: none;
+  color: #fff;
+}
+
+footer a:hover {
+  color: #fff;
 }
 
 .end-line {
@@ -355,16 +350,8 @@ footer p {
 }
 
 /* testimonial styling */
-.testimonial {
-  overflow-x: scroll;
-}
-
-.testimonial:-webkit-scrollbar {
-  display: none !important;
-}
-
 .testimonial-wrapper {
-  min-width: calc(275px + 19vw);
+  width: calc(275px + 19vw);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -411,7 +398,7 @@ footer p {
 
 .bottom-area p {
   color: #464646;
-  font-size: calc(14px + 0.45vw);
+  font-size: calc(12px + 0.35vw);
   font-family: Lato, sans-serif;
 }
 
@@ -419,3 +406,5 @@ footer p {
   display: flex;
   overflow-x: scroll;
 }
+
+/* testimonial test */
