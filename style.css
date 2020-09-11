@@ -7,6 +7,10 @@
   font-family: Lato, sans-serif !important;
 }
 
+.navbar-collapse.in {
+  display: block !important;
+}
+
 .btn-nav {
   color: #fff !important;
   background: linear-gradient(135deg, #754799 0%, rgba(255, 51, 134, 0.9) 100%);
