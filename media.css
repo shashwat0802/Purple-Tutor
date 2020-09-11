@@ -25,8 +25,11 @@
     width: 100%;
     z-index: 1000 !important;
   }
+  .fourth-area div {
+    width: 75% !important;
+  }
   .icons-left {
-    top: 3px !important;
+    top: 13% !important;
     left: -4.25% !important;
   }
 
@@ -41,16 +44,23 @@
   }
 
   .icon-2 {
-    top: 11px !important;
+    top: 15% !important;
   }
   .icon-5 {
     top: 15px !important;
   }
-  .fourth-area div {
-    width: 75% !important;
-  }
+
   /* card */
   .card {
     height: 210px;
+  }
+}
+@media (min-width: 800px) {
+  .fourth-area div {
+    width: 80% !important;
+  }
+  .icons-left {
+    top: 10% !important;
+    left: -3.25% !important;
   }
 }
