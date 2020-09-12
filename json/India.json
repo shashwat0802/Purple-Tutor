@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Aaisha Singh ",
+    "age": "9",
+    "image": "img/india/image2.jpeg",
+    "testimony": "My teacher teaches me everything very nicely and step by step. I really like coding and it has helped me and took my time during the period of lockdown. I really like this Purple tutor"
+  },
+  {
+    "name": "Arjun Menon ",
+    "age": "9",
+    "image": "img/india/image3.png",
+    "testimony": " I would thank my parents letting me join Purple tutor in this lockdown. I never knew computers were so interesting. I do my programming on code.org"
+  },
+  {
+    "name": "Soumay Singhal ",
+    "age": "11",
+    "image": "img/india/image4.jpeg",
+    "testimony": "I’ve been learning coding from Purple tutor since Dec 2019. I love how my teacher guides me to make figures in artist lab and how to make games along with explaining the concepts very briefly. I just love it"
+  },
+  {
+    "name": "Aarav Shah ",
+    "age": "11",
+    "image": "img/india/image5.png",
+    "testimony": "I like purple tutor beacause the faculty that they have and teaches is very good"
+  },
+  {
+    "name": "Atishaya Gupta",
+    "age": "12",
+    "image": "img/india/image6.png",
+    "testimony": "Learning coding was an excellent journey for me. I have learnt different types of computer programming and I believe this would be very essential for my future life"
+  }
+]
