@@ -440,3 +440,51 @@ footer a:hover {
   font-size: calc(12px + 0.8vw);
   color: #444444;
 }
+
+/* testing */
+
+.project-pic {
+  width: calc(48px + 1.3vw);
+  height: calc(48px + 1.3vw);
+  background-color: #000;
+  /* object-fit: cover; */
+  border-radius: 50%;
+}
+
+.project-name {
+  background: linear-gradient(135deg, #754799 0%, rgba(255, 51, 134, 0.9) 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: calc(14px + 0.75vw);
+}
+
+.project-country {
+  background-color: #fee6ec;
+  color: #4d1a6c;
+  border-radius: 20px;
+  font-size: calc(12px + 0.35vw);
+}
+
+.project-content {
+  color: #444444;
+  font-size: calc(12px + 0.35vw);
+}
+
+.test-carousel {
+  height: calc(260px + 6.65vw);
+  width: calc(315px + 4vw);
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: relative;
+}
+.project-img {
+  height: calc(170px + 3vw);
+  width: calc(265px + 3.5vw);
+  background-color: #d8d8d8;
+  border-radius: 4px;
+  position: absolute;
+  top: -10%;
+  left: 7.5%;
+}
