@@ -69,7 +69,7 @@ fetch(`json/India.json`)
       // adding testimonial wrapper to carousel inner
       var Carousel = document.getElementById("c-inner")
       var CarouselItem = document.createElement("div")
-      CarouselItem.className = "carousel-item"
+      CarouselItem.className = `carousel-item ${info.active}`
       CarouselItem.setAttribute("data-interval", "3000")
       CarouselItem.appendChild(testimonial)
       Carousel.appendChild(CarouselItem)
