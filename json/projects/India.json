@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Aarush Sarda",
+    "age": "7",
+    "image": "img/projects/India/image1.jpeg",
+    "projectImg": "img/projects/India/project-img/image1.png",
+    "description": "Created a \"STORY Making Fun of a Witch\" ",
+    "active": "active"
+  },
+  {
+    "name": "GAHAN V",
+    "age": "14",
+    "image": "img/projects/India/image2.jpeg",
+    "projectImg": "img/projects/India/project-img/image2.png",
+    "description": "Created an APP \"WEIGHT ON MOON CALCULATOR\" ",
+    "active": ""
+  },
+  {
+    "name": "Liza Singh",
+    "age": "Grade 9",
+    "image": "img/projects/India/image3.jpeg",
+    "projectImg": "img/projects/India/project-img/image3.png",
+    "description": " Created a game \"Feed the shark\"",
+    "active": ""
+  },
+  {
+    "name": "DEBANJANA",
+    "age": "Grade 7",
+    "image": "img/projects/India/image4.jpeg",
+    "projectImg": "img/projects/India/project-img/image4.png",
+    "description": "Created an app \"Multi language translator\"",
+    "active": ""
+  },
+  {
+    "name": "Saanvi Dighe",
+    "age": "Grade 4",
+    "image": "img/projects/India/image5.jpeg",
+    "projectImg": "img/projects/India/project-img/image5.png",
+    "description": "Created an app \"Discover Countries\"",
+    "active": ""
+  }
+]
