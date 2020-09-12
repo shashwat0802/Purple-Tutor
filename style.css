@@ -208,7 +208,7 @@
 
 /* third area */
 .third-area {
-  background-color: #f7f7f7;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2) !important;
 }
 
 .image img {
@@ -406,9 +406,37 @@ footer a:hover {
   font-family: Lato, sans-serif;
 }
 
-.test-div {
-  display: flex;
-  overflow-x: scroll;
+/* project section styling */
+.projects h1 {
+  background: linear-gradient(135deg, #754799 0%, rgba(255, 51, 134, 0.9) 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: calc(18px + 1.25vw);
 }
 
-/* testimonial test */
+/* teacher section styling */
+.teacher h1 {
+  background: linear-gradient(135deg, #754799 0%, rgba(255, 51, 134, 0.9) 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: calc(18px + 1.25vw);
+}
+
+.teacher {
+  background-color: #f7f7f7;
+}
+
+.project-content h2 {
+  font-size: calc(14px + 0.8vw);
+  font-weight: 600;
+  color: #4d1a6c;
+  letter-spacing: 1px;
+  line-height: calc(16px + 1.5vw);
+}
+
+.project-content h3 {
+  font-size: calc(12px + 0.8vw);
+  color: #444444;
+}
