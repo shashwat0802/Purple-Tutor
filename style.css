@@ -208,7 +208,7 @@
 
 /* third area */
 .third-area {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2) !important;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 .image img {
@@ -407,6 +407,10 @@ footer a:hover {
 }
 
 /* project section styling */
+.projects {
+  background-color: #f7f7f7;
+}
+
 .projects h1 {
   background: linear-gradient(135deg, #754799 0%, rgba(255, 51, 134, 0.9) 80%);
   -webkit-background-clip: text;
