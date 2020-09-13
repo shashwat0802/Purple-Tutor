@@ -91,10 +91,7 @@ fetch(`json/projects/India.json`)
       var ProjectImg = document.createElement("div")
       ProjectImg.className = "project-img"
       var ImgInProject = document.createElement("img")
-      ImgInProject.setAttribute(
-        "src",
-        "./img/projects/India/project-img/image1.png"
-      )
+      ImgInProject.setAttribute("src", `${info.projectImg}`)
       ProjectImg.appendChild(ImgInProject)
       projectCarousel.appendChild(ProjectImg)
 
@@ -107,7 +104,7 @@ fetch(`json/projects/India.json`)
       var studentPic = document.createElement("div")
       studentPic.className = "project-pic mt-1"
       var studentImg = document.createElement("img")
-      studentImg.setAttribute("src", "./img/projects/India/image1.jpeg")
+      studentImg.setAttribute("src", `${info.image}`)
       studentPic.appendChild(studentImg)
       ContentWrapper.appendChild(studentPic)
 
@@ -118,11 +115,11 @@ fetch(`json/projects/India.json`)
       // paragraphs creation
       var Pname = document.createElement("p")
       Pname.className = "project-name mb-0"
-      var P1 = document.createTextNode("Terry crews")
+      var P1 = document.createTextNode(`${info.name} , ${info.age}`)
       Pname.appendChild(P1)
       var Pcountry = document.createElement("p")
       Pcountry.className = "project-country mb-0 px-2 py-1 text-center"
-      var P2 = document.createTextNode("Indonesia")
+      var P2 = document.createTextNode("India")
       Pcountry.appendChild(P2)
       // paragraphs into content div
       ProjectContent.appendChild(Pname)
@@ -135,17 +132,15 @@ fetch(`json/projects/India.json`)
       // bottom paragraph creation
       var bottomPara = document.createElement("p")
       bottomPara.className = "project-content px-1"
-      var P3 = document.createTextNode(
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit"
-      )
+      var P3 = document.createTextNode(`${info.description}`)
       bottomPara.appendChild(P3)
       projectCarousel.appendChild(bottomPara)
 
       // adding projectCarousel into carousel item
       var PCarousel = document.getElementById("c-inner2")
       var pCarouselItem = document.createElement("div")
-      pCarouselItem.className = `carousel-item`
-      // pCarouselItem.setAttribute("data-interval", "3000")
+      pCarouselItem.className = `carousel-item ${info.active}`
+      pCarouselItem.setAttribute("data-interval", "3000")
       pCarouselItem.appendChild(projectCarousel)
       PCarousel.appendChild(pCarouselItem)
     })
