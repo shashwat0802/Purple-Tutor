@@ -76,3 +76,77 @@ fetch(`json/India.json`)
     })
   })
 // })
+
+// carousel for project
+fetch(`json/projects/India.json`)
+  .then((res) => res.json())
+  .then((data) => {
+    data.forEach((info) => {
+      //  test carousel div
+      var projectCarousel = document.createElement("div")
+      projectCarousel.className =
+        "mx-auto test-carousel p-2 d-flex flex-column justify-content-end mb-4"
+
+      // project-img div gets inside test carousel div
+      var ProjectImg = document.createElement("div")
+      ProjectImg.className = "project-img"
+      var ImgInProject = document.createElement("img")
+      ImgInProject.setAttribute(
+        "src",
+        "./img/projects/India/project-img/image1.png"
+      )
+      ProjectImg.appendChild(ImgInProject)
+      projectCarousel.appendChild(ProjectImg)
+
+      // content wrapper
+      var ContentWrapper = document.createElement("div")
+      ContentWrapper.className = "d-flex justify-between pl-3"
+      // dont forget to add this into project carousel
+
+      // profile pic div
+      var studentPic = document.createElement("div")
+      studentPic.className = "project-pic mt-1"
+      var studentImg = document.createElement("img")
+      studentImg.setAttribute("src", "./img/projects/India/image1.jpeg")
+      studentPic.appendChild(studentImg)
+      ContentWrapper.appendChild(studentPic)
+
+      // project content div
+      var ProjectContent = document.createElement("div")
+      ProjectContent.className =
+        "project-content ml-2 d-flex justify-content-end flex-column mb-2"
+      // paragraphs creation
+      var Pname = document.createElement("p")
+      Pname.className = "project-name mb-0"
+      var P1 = document.createTextNode("Terry crews")
+      Pname.appendChild(P1)
+      var Pcountry = document.createElement("p")
+      Pcountry.className = "project-country mb-0 px-2 py-1 text-center"
+      var P2 = document.createTextNode("Indonesia")
+      Pcountry.appendChild(P2)
+      // paragraphs into content div
+      ProjectContent.appendChild(Pname)
+      ProjectContent.appendChild(Pcountry)
+      ContentWrapper.appendChild(ProjectContent)
+
+      // adding content wrapper into project carousel
+      projectCarousel.appendChild(ContentWrapper)
+
+      // bottom paragraph creation
+      var bottomPara = document.createElement("p")
+      bottomPara.className = "project-content px-1"
+      var P3 = document.createTextNode(
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit"
+      )
+      bottomPara.appendChild(P3)
+      projectCarousel.appendChild(bottomPara)
+
+      // adding projectCarousel into carousel item
+      var PCarousel = document.getElementById("c-inner2")
+      var pCarouselItem = document.createElement("div")
+      pCarouselItem.className = `carousel-item`
+      // pCarouselItem.setAttribute("data-interval", "3000")
+      pCarouselItem.appendChild(projectCarousel)
+      PCarousel.appendChild(pCarouselItem)
+    })
+  })

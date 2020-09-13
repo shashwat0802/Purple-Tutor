@@ -443,11 +443,11 @@ footer a:hover {
 
 /* testing */
 
-.project-pic {
+.project-pic img {
   width: calc(48px + 1.3vw);
   height: calc(48px + 1.3vw);
-  background-color: #000;
-  /* object-fit: cover; */
+  /* background-color: #000; */
+  object-fit: cover;
   border-radius: 50%;
 }
 
@@ -479,12 +479,13 @@ footer a:hover {
   border-radius: 4px;
   position: relative;
 }
-.project-img {
+.project-img img {
   height: calc(170px + 3vw);
   width: calc(265px + 3.5vw);
-  background-color: #d8d8d8;
+  /* background-color: #d8d8d8; */
   border-radius: 4px;
   position: absolute;
   top: -10%;
   left: 7.5%;
+  object-fit: cover;
 }
