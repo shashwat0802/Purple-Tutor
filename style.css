@@ -96,6 +96,10 @@
   left: 0;
 }
 
+.helpline a {
+  color: #fff;
+}
+
 /* navbar styling */
 .navbar-nav .nav-item .nav-link {
   color: #fff;
@@ -484,9 +488,15 @@ footer a:hover {
   position: relative;
 }
 .project-img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.project-img {
   height: calc(170px + 4.5vw);
   width: calc(265px + 3.5vw);
-  /* background-color: #d8d8d8; */
+  /* background-color: #000000; */
   border-radius: 4px;
   position: absolute;
   top: -10%;

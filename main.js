@@ -92,6 +92,7 @@ fetch(`json/projects/India.json`)
       ProjectImg.className = "project-img"
       var ImgInProject = document.createElement("img")
       ImgInProject.setAttribute("src", `${info.projectImg}`)
+
       ProjectImg.appendChild(ImgInProject)
       projectCarousel.appendChild(ProjectImg)
 
