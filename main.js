@@ -77,11 +77,13 @@ fetch(`json/India.json`)
   })
 // })
 
-// carousel for project
+// --------------------------------carousel for project------------------------
 fetch(`json/projects/India.json`)
   .then((res) => res.json())
   .then((data) => {
-    data.forEach((info) => {
+    const count = data.length
+    console.log(count / 3)
+    for (let info = 0; info < count; info += 3) {
       //  test carousel div
       var projectCarousel = document.createElement("div")
       projectCarousel.className =
@@ -91,7 +93,7 @@ fetch(`json/projects/India.json`)
       var ProjectImg = document.createElement("div")
       ProjectImg.className = "project-img"
       var ImgInProject = document.createElement("img")
-      ImgInProject.setAttribute("src", `${info.projectImg}`)
+      ImgInProject.setAttribute("src", `${data[info].projectImg}`)
 
       ProjectImg.appendChild(ImgInProject)
       projectCarousel.appendChild(ProjectImg)
@@ -105,7 +107,7 @@ fetch(`json/projects/India.json`)
       var studentPic = document.createElement("div")
       studentPic.className = "project-pic mt-1"
       var studentImg = document.createElement("img")
-      studentImg.setAttribute("src", `${info.image}`)
+      studentImg.setAttribute("src", `${data[info].image}`)
       studentPic.appendChild(studentImg)
       ContentWrapper.appendChild(studentPic)
 
@@ -116,7 +118,7 @@ fetch(`json/projects/India.json`)
       // paragraphs creation
       var Pname = document.createElement("p")
       Pname.className = "project-name mb-0"
-      var P1 = document.createTextNode(`${info.name} , ${info.age}`)
+      var P1 = document.createTextNode(`${data[info].name} , ${data[info].age}`)
       Pname.appendChild(P1)
       var Pcountry = document.createElement("p")
       Pcountry.className = "project-country mb-0 px-2 py-1 text-center"
@@ -133,16 +135,145 @@ fetch(`json/projects/India.json`)
       // bottom paragraph creation
       var bottomPara = document.createElement("p")
       bottomPara.className = "project-content px-1"
-      var P3 = document.createTextNode(`${info.description}`)
+      var P3 = document.createTextNode(`${data[info].description}`)
       bottomPara.appendChild(P3)
       projectCarousel.appendChild(bottomPara)
 
-      // adding projectCarousel into carousel item
-      var PCarousel = document.getElementById("c-inner2")
+      // ---------------------------2nd project--------------------------------
+      //  test carousel div
+      var projectCarousel2 = document.createElement("div")
+      projectCarousel2.className =
+        "mx-auto test-carousel p-2 flex-column justify-content-end mb-4 d-none d-md-flex"
+
+      // project-img div gets inside test carousel div
+      var ProjectImg2 = document.createElement("div")
+      ProjectImg2.className = "project-img"
+      var ImgInProject2 = document.createElement("img")
+      ImgInProject2.setAttribute("src", `${data[info + 1].projectImg}`)
+
+      ProjectImg2.appendChild(ImgInProject2)
+      projectCarousel2.appendChild(ProjectImg2)
+
+      // content wrapper
+      var ContentWrapper2 = document.createElement("div")
+      ContentWrapper2.className = "d-flex justify-between pl-3"
+      // dont forget to add this into project carousel
+
+      // profile pic div
+      var studentPic2 = document.createElement("div")
+      studentPic2.className = "project-pic mt-1"
+      var studentImg2 = document.createElement("img")
+      studentImg2.setAttribute("src", `${data[info + 1].image}`)
+      studentPic2.appendChild(studentImg2)
+      ContentWrapper2.appendChild(studentPic2)
+
+      // project content div
+      var ProjectContent2 = document.createElement("div")
+      ProjectContent2.className =
+        "project-content ml-2 d-flex justify-content-end flex-column mb-2"
+      // paragraphs creation
+      var Pname2 = document.createElement("p")
+      Pname2.className = "project-name mb-0"
+      var P12 = document.createTextNode(
+        `${data[info + 1].name} , ${data[info + 1].age}`
+      )
+      Pname2.appendChild(P12)
+      var Pcountry2 = document.createElement("p")
+      Pcountry2.className = "project-country mb-0 px-2 py-1 text-center"
+      var P22 = document.createTextNode("India")
+      Pcountry2.appendChild(P22)
+      // paragraphs into content div
+      ProjectContent2.appendChild(Pname2)
+      ProjectContent2.appendChild(Pcountry2)
+      ContentWrapper2.appendChild(ProjectContent2)
+
+      // adding content wrapper into project carousel
+      projectCarousel2.appendChild(ContentWrapper2)
+
+      // bottom paragraph creation
+      var bottomPara2 = document.createElement("p")
+      bottomPara2.className = "project-content px-1"
+      var P32 = document.createTextNode(`${data[info + 1].description}`)
+      bottomPara2.appendChild(P32)
+      projectCarousel2.appendChild(bottomPara2)
+
+      // -------------------------------3rd project div---------------------------
+      //  test carousel div
+      var projectCarousel3 = document.createElement("div")
+      projectCarousel3.className =
+        "mx-auto test-carousel p-2 d-lg-flex d-none flex-column justify-content-end mb-4"
+
+      // project-img div gets inside test carousel div
+      var ProjectImg3 = document.createElement("div")
+      ProjectImg3.className = "project-img"
+      var ImgInProject3 = document.createElement("img")
+      ImgInProject3.setAttribute("src", `${data[info + 2].projectImg}`)
+
+      ProjectImg3.appendChild(ImgInProject3)
+      projectCarousel3.appendChild(ProjectImg3)
+
+      // content wrapper
+      var ContentWrapper3 = document.createElement("div")
+      ContentWrapper3.className = "d-flex justify-between pl-3"
+      // dont forget to add this into project carousel
+
+      // profile pic div
+      var studentPic3 = document.createElement("div")
+      studentPic3.className = "project-pic mt-1"
+      var studentImg3 = document.createElement("img")
+      studentImg3.setAttribute("src", `${data[info + 2].image}`)
+      studentPic3.appendChild(studentImg3)
+      ContentWrapper3.appendChild(studentPic3)
+
+      // project content div
+      var ProjectContent3 = document.createElement("div")
+      ProjectContent3.className =
+        "project-content ml-2 d-flex justify-content-end flex-column mb-2"
+      // paragraphs creation
+      var Pname3 = document.createElement("p")
+      Pname3.className = "project-name mb-0"
+      var P13 = document.createTextNode(
+        `${data[info + 2].name} , ${data[info + 2].age}`
+      )
+      Pname3.appendChild(P13)
+      var Pcountry3 = document.createElement("p")
+      Pcountry3.className = "project-country mb-0 px-2 py-1 text-center"
+      var P23 = document.createTextNode("India")
+      Pcountry3.appendChild(P23)
+      // paragraphs into content div
+      ProjectContent3.appendChild(Pname3)
+      ProjectContent3.appendChild(Pcountry3)
+      ContentWrapper3.appendChild(ProjectContent3)
+
+      // adding content wrapper into project carousel
+      projectCarousel3.appendChild(ContentWrapper3)
+
+      // bottom paragraph creation
+      var bottomPara3 = document.createElement("p")
+      bottomPara3.className = "project-content px-1"
+      var P33 = document.createTextNode(`${data[info + 2].description}`)
+      bottomPara3.appendChild(P33)
+      projectCarousel3.appendChild(bottomPara3)
+
+      // add all 3 divs into the container and add that container into the c-inner
+      var Container = document.createElement("div")
+      Container.className = "carousel-container d-flex justify-content-between"
+      Container.appendChild(projectCarousel)
+      Container.appendChild(projectCarousel2)
+      Container.appendChild(projectCarousel3)
+
+      // condition for active class ------------- important------------------------
       var pCarouselItem = document.createElement("div")
-      pCarouselItem.className = `carousel-item ${info.active}`
-      pCarouselItem.setAttribute("data-interval", "3000")
-      pCarouselItem.appendChild(projectCarousel)
-      PCarousel.appendChild(pCarouselItem)
-    })
+      if (info === 0) {
+        pCarouselItem.className = `carousel-item active`
+      }
+      if (info !== 0) {
+        pCarouselItem.className = `carousel-item`
+      }
+      pCarouselItem.setAttribute("data-interval", "6000")
+      pCarouselItem.appendChild(Container)
+      var pCarousel = document.getElementById("c-inner2")
+      pCarousel.appendChild(pCarouselItem)
+    }
+    // for each ends
   })

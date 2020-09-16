@@ -38,5 +38,85 @@
     "projectImg": "img/projects/India/project-img/image5.png",
     "description": "Created an app \"Discover Countries\"",
     "active": ""
+  },
+  {
+    "name": "Shreyash verma",
+    "age": "15",
+    "image": "img/projects/India/image6.jpeg",
+    "projectImg": "img/projects/India/project-img/image6.png",
+    "description": "Created a Canada's flag",
+    "active": ""
+  },
+  {
+    "name": "Ayan Makarand Patil",
+    "age": "8",
+    "image": "img/projects/India/image7.jpeg",
+    "projectImg": "img/projects/India/project-img/image7.png",
+    "description": "Created an animated dance.",
+    "active": ""
+  },
+  {
+    "name": "Amay kawatra ",
+    "age": "11",
+    "image": "img/projects/India/image8.jpeg",
+    "projectImg": "img/projects/India/project-img/image8.png",
+    "description": "Created a STORY \"the cat and the dog\"",
+    "active": ""
+  },
+  {
+    "name": "Atharva Mishra",
+    "age": "6",
+    "image": "img/projects/India/image9.jpeg",
+    "projectImg": "img/projects/India/project-img/image9.png",
+    "description": "Created an animation",
+    "active": ""
+  },
+  {
+    "name": "Vivaan",
+    "age": "4",
+    "image": "img/projects/India/image10.jpeg",
+    "projectImg": "img/projects/India/project-img/image10.png",
+    "description": "Created a detective game in Scratch",
+    "active": ""
+  },
+  {
+    "name": "Aaisha",
+    "age": "4",
+    "image": "img/projects/India/image11.jpeg",
+    "projectImg": "img/projects/India/project-img/image11.png",
+    "description": "Created a Mummy - Papa Animated letters in Scratch",
+    "active": ""
+  },
+  {
+    "name": "Vivaan",
+    "age": "4",
+    "image": "img/projects/India/image12.jpeg",
+    "projectImg": "img/projects/India/project-img/image12.png",
+    "description": "Created a Football game- Scratch",
+    "active": ""
+  },
+  {
+    "name": "Tanish",
+    "age": "5",
+    "image": "img/projects/India/image13.jpeg",
+    "projectImg": "img/projects/India/project-img/image13.png",
+    "description": "Created a Touch me not game in Game lab",
+    "active": ""
+  },
+  {
+    "name": "Kushal Chaudhari",
+    "age": "9",
+    "image": "img/projects/India/image14.jpeg",
+    "projectImg": "img/projects/India/project-img/image14.png",
+    "description": "Created a Stop watch and Timer App",
+    "active": ""
+  },
+  {
+    "name": "chayan",
+    "age": "6",
+    "image": "img/projects/India/image15.jpeg",
+    "projectImg": "img/projects/India/project-img/image15.png",
+    "description": "made a coronovirus project in game lab",
+    "active": ""
   }
 ]
