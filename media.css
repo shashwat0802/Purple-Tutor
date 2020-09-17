@@ -21,7 +21,9 @@
   .project-image img {
     width: 100%;
   }
-  /* project carousel */
+  #nav-button {
+    max-width: 150px !important;
+  }
 }
 
 /*  */
