@@ -40,5 +40,47 @@
     "image": "img/india/image6.png",
     "testimony": "Learning coding was an excellent journey for me. I have learnt different types of computer programming and I believe this would be very essential for my future life",
     "active": ""
+  },
+  {
+    "name": " Vanya Midha",
+    "age": "2",
+    "image": "img/india/image7.jpeg",
+    "testimony": "Me and my teacher are actively engaged and interacting with one another. It's fun to learn new thing each day.",
+    "active": ""
+  },
+  {
+    "name": "Atharva Mishra",
+    "age": "6",
+    "image": "img/india/image8.jpeg",
+    "testimony": "My first few classes of coding inspired me to make this project. I really find coding is a very interesting and fun way to learn.i would like to thank my parents and my teacher for motivating me to make this project.",
+    "active": ""
+  },
+  {
+    "name": "Aditi",
+    "age": "6",
+    "image": "img/india/image9.jpeg",
+    "testimony": "I would give a suggestion to do coding it is very fun and is very important in this technologically advanced world.",
+    "active": ""
+  },
+  {
+    "name": "Anya Shah",
+    "age": "5",
+    "image": "img/india/image10.jpeg",
+    "testimony": "Coding a smiley face was a fun task which I enjoyed alot under the guidance of Rupal Mam.",
+    "active": ""
+  },
+  {
+    "name": "Rigun kour",
+    "age": "13",
+    "image": "img/india/image11.jpeg",
+    "testimony": "I am doing this type of thing first time and i am learning new things. The teacher is really good. My work is going really good. It's a good learning experience.",
+    "active": ""
+  },
+  {
+    "name": "Shreyash Verma",
+    "age": "15",
+    "image": "img/india/image12.jpeg",
+    "testimony": "My experience with Purpletutor is very nice. The classes are very informative and helpful.",
+    "active": ""
   }
 ]

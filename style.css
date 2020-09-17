@@ -305,6 +305,7 @@
 /* card styling */
 .card {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  height: calc(155px + 12.5vw);
 }
 
 .card-title {
@@ -359,7 +360,7 @@ footer a:hover {
 
 /* testimonial styling */
 .testimonial-wrapper {
-  width: calc(275px + 19vw);
+  width: calc(285px + 12vw);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -486,6 +487,7 @@ footer a:hover {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   position: relative;
+  margin: 0 0.5rem;
 }
 .project-img img {
   object-fit: cover;

@@ -9,13 +9,17 @@
 fetch(`json/India.json`)
   .then((res) => res.json())
   .then((data) => {
-    data.forEach((info) => {
+    const count = data.length
+    console.log(count)
+
+    for (let info = 0; info < count; info += 3) {
       // testimonial wrapper
       var testimonial = document.createElement("div")
-      testimonial.className = "testimonial-wrapper mx-auto"
+      testimonial.className = "testimonial-wrapper mx-auto "
       // upper area
       var topRow = document.createElement("div")
-      topRow.className = "upper-area p-2 d-flex justify-content-md-center"
+      topRow.className =
+        "upper-area p-2 d-flex justify-content-md-center  mb-3 mb-md-0"
       testimonial.appendChild(topRow)
       // bottom area
       var bottomRow = document.createElement("div")
@@ -30,9 +34,9 @@ fetch(`json/India.json`)
       // profile pic
       var profilePic = document.createElement("div")
       profilePic.className = "profile-pic mt-2 mt-md-0"
-      var img = document.createElement("img")
-      img.setAttribute("src", `${info.image}`)
-      profilePic.appendChild(img)
+      var Image = document.createElement("img")
+      Image.setAttribute("src", `${data[info].image}`)
+      profilePic.appendChild(Image)
       personInfo.appendChild(profilePic)
 
       // profile content
@@ -42,38 +46,162 @@ fetch(`json/India.json`)
       // paragraphs inside content
       var country = document.createElement("p")
       var name = document.createElement("p")
-      var course = document.createElement("p")
+      var course1 = document.createElement("p")
       country.className = "country mb-0 py-1 px-md-3"
       name.className = "name mb-0"
-      course.className = "course mb-0"
+      course1.className = "course mb-0"
 
       var p1 = document.createTextNode(`India`)
       country.appendChild(p1)
-      var p2 = document.createTextNode(`${info.name}`)
+      var p2 = document.createTextNode(`${data[info].name}`)
       name.appendChild(p2)
-      var p3 = document.createTextNode(`${info.age}`)
-      course.appendChild(p3)
+      var p3 = document.createTextNode(`${data[info].age}`)
+      course1.appendChild(p3)
       profileContent.appendChild(country)
       profileContent.appendChild(name)
-      profileContent.appendChild(course)
+      profileContent.appendChild(course1)
 
       // adding content to person-info
       personInfo.appendChild(profileContent)
 
       // bottom area content
       var statement = document.createElement("p")
-      var p4 = document.createTextNode(`${info.testimony}`)
+      var p4 = document.createTextNode(`${data[info].testimony}`)
       statement.appendChild(p4)
       bottomRow.appendChild(statement)
 
-      // adding testimonial wrapper to carousel inner
+      // -------------------------------2nd testimonial------------------------
+      // testimonial wrapper
+      var testimonial2 = document.createElement("div")
+      testimonial2.className = "testimonial-wrapper mx-auto d-none d-md-block"
+      // upper area
+      var topRow2 = document.createElement("div")
+      topRow2.className = "upper-area p-2 d-flex justify-content-md-center"
+      testimonial2.appendChild(topRow2)
+      // bottom area
+      var bottomRow2 = document.createElement("div")
+      bottomRow2.className = "bottom-area p-2 p-md-3 text-left text-md-center"
+      testimonial2.appendChild(bottomRow2)
+
+      // upper area wrapper
+      var personInfo2 = document.createElement("div")
+      personInfo2.className = "person-info d-flex justify-content-between"
+      topRow2.appendChild(personInfo2)
+
+      // profile pic
+      var profilePic2 = document.createElement("div")
+      profilePic2.className = "profile-pic mt-2 mt-md-0"
+      var Image2 = document.createElement("img")
+      Image2.setAttribute("src", `${data[info + 1].image}`)
+      profilePic2.appendChild(Image2)
+      personInfo2.appendChild(profilePic2)
+
+      // profile content
+      var profileContent2 = document.createElement("div")
+      profileContent2.className = "profile-content ml-2"
+
+      // paragraphs inside content
+      var country2 = document.createElement("p")
+      var name2 = document.createElement("p")
+      var course2 = document.createElement("p")
+      country2.className = "country mb-0 py-1 px-md-3"
+      name2.className = "name mb-0"
+      course2.className = "course mb-0"
+
+      var p12 = document.createTextNode(`India`)
+      country2.appendChild(p12)
+      var p22 = document.createTextNode(`${data[info + 1].name}`)
+      name2.appendChild(p22)
+      var p32 = document.createTextNode(`${data[info + 1].age}`)
+      course2.appendChild(p32)
+      profileContent2.appendChild(country2)
+      profileContent2.appendChild(name2)
+      profileContent2.appendChild(course2)
+
+      // adding content to person-info
+      personInfo2.appendChild(profileContent2)
+
+      // bottom area content
+      var statement2 = document.createElement("p")
+      var p42 = document.createTextNode(`${data[info + 1].testimony}`)
+      statement2.appendChild(p42)
+      bottomRow2.appendChild(statement2)
+
+      // -------------------------------3rd testimonial----------------------------
+      // testimonial wrapper
+      var testimonial3 = document.createElement("div")
+      testimonial3.className = "testimonial-wrapper mx-auto d-none d-lg-block"
+      // upper area
+      var topRow3 = document.createElement("div")
+      topRow3.className = "upper-area p-2 d-flex justify-content-md-center"
+      testimonial3.appendChild(topRow3)
+      // bottom area
+      var bottomRow3 = document.createElement("div")
+      bottomRow3.className = "bottom-area p-2 p-md-3 text-left text-md-center"
+      testimonial3.appendChild(bottomRow3)
+
+      // upper area wrapper
+      var personInfo3 = document.createElement("div")
+      personInfo3.className = "person-info d-flex justify-content-between"
+      topRow3.appendChild(personInfo3)
+
+      // profile pic
+      var profilePic3 = document.createElement("div")
+      profilePic3.className = "profile-pic mt-2 mt-md-0"
+      var Image3 = document.createElement("img")
+      Image3.setAttribute("src", `${data[info + 2].image}`)
+      profilePic3.appendChild(Image3)
+      personInfo3.appendChild(profilePic3)
+
+      // profile content
+      var profileContent3 = document.createElement("div")
+      profileContent3.className = "profile-content ml-2"
+
+      // paragraphs inside content
+      var country3 = document.createElement("p")
+      var name3 = document.createElement("p")
+      var course3 = document.createElement("p")
+      country3.className = "country mb-0 py-1 px-md-3"
+      name3.className = "name mb-0"
+      course3.className = "course mb-0"
+
+      var p13 = document.createTextNode(`India`)
+      country3.appendChild(p13)
+      var p23 = document.createTextNode(`${data[info + 2].name}`)
+      name3.appendChild(p23)
+      var p33 = document.createTextNode(`${data[info + 2].age}`)
+      course3.appendChild(p33)
+      profileContent3.appendChild(country3)
+      profileContent3.appendChild(name3)
+      profileContent3.appendChild(course3)
+
+      // adding content to person-info
+      personInfo3.appendChild(profileContent3)
+
+      // bottom area content
+      var statement3 = document.createElement("p")
+      var p43 = document.createTextNode(`${data[info + 2].testimony}`)
+      statement3.appendChild(p43)
+      bottomRow3.appendChild(statement3)
+
+      // ----------container for all 3 testimonial plus active conditional----------
+      var Tcontainer = document.createElement("div")
+      Tcontainer.className = "d-flex"
+      Tcontainer.appendChild(testimonial)
+      Tcontainer.appendChild(testimonial2)
+      Tcontainer.appendChild(testimonial3)
       var Carousel = document.getElementById("c-inner")
       var CarouselItem = document.createElement("div")
-      CarouselItem.className = `carousel-item ${info.active}`
-      CarouselItem.setAttribute("data-interval", "3000")
-      CarouselItem.appendChild(testimonial)
+      if (info === 0) {
+        CarouselItem.className = `carousel-item active`
+      }
+      if (info !== 0) {
+        CarouselItem.className = `carousel-item`
+      }
+      CarouselItem.setAttribute("data-interval", "6000")
+      CarouselItem.appendChild(Tcontainer)
       Carousel.appendChild(CarouselItem)
-    })
+    }
   })
 // })
 
