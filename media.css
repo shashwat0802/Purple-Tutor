@@ -24,6 +24,10 @@
   #nav-button {
     max-width: 150px !important;
   }
+  /* button styling */
+  .btn-custom {
+    padding: 0.5rem !important;
+  }
 }
 
 /*  */

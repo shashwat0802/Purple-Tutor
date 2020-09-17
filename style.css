@@ -505,3 +505,47 @@ footer a:hover {
   left: 7.5%;
   object-fit: cover;
 }
+
+/* pricing areaa */
+.pricing h1 {
+  background: linear-gradient(135deg, #754799 0%, rgba(255, 51, 134, 0.9) 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: calc(18px + 1.25vw);
+}
+
+.pricing h5 {
+  color: #464646;
+  font-size: calc(14px + 0.35vw);
+  opacity: 0.8;
+}
+
+.tab-wrapper {
+  width: calc(300px + 12vw);
+  border-radius: 100px;
+  border: 1px solid transparent;
+  background-image: linear-gradient(white, white),
+    linear-gradient(135deg, #ffc084 0%, #7f2982 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.tab-wrapper .current {
+  color: #fff !important;
+  background: linear-gradient(135deg, #ffc084 0%, #7f2982 100%);
+  border-radius: 100px;
+  border: none;
+
+  font-size: calc(12px + 0.35vw) !important;
+  font-weight: 500;
+}
+
+.tab-wrapper .disable {
+  font-weight: 600;
+  font-size: calc(12px + 0.35vw);
+  background: linear-gradient(135deg, #754799 0%, rgba(255, 51, 134, 0.9) 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
