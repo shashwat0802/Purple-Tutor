@@ -405,16 +405,15 @@ fetch(`json/projects/India.json`)
     // for each ends
   })
 
-// logic for pricing display
-const handleClick = () => {
-  const icon = document.querySelectorAll("#icon-click")
-  console.log(icon)
-  const priceBottom = document.querySelectorAll(".price-bottom")
-  for (let i = 0; i < icon.length; i++) {
-    icon[i].addEventListener("click", function () {
-      console.log("clicked")
-    })
-  }
+const handlePricing = () => {
+  var price2 = document.querySelector("#price2")
+  $(document).width() >= 768
+    ? price2.classList.toggle("show")
+    : price2.classList.add("")
+  var price3 = document.querySelector("#price3")
+  $(document).width() >= 768
+    ? price3.classList.toggle("show")
+    : price3.classList.add("")
 }
 
-handleClick()
+handlePricing()
