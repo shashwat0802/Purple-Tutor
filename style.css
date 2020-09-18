@@ -450,8 +450,6 @@ footer a:hover {
   color: #444444;
 }
 
-/* testing */
-
 .project-pic img {
   width: calc(48px + 1.3vw);
   height: calc(48px + 1.3vw);
@@ -548,4 +546,66 @@ footer a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/* pricing information */
+.price-info-wrapper {
+  border-radius: 12px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.price-upper {
+  background-color: #fafafa;
+}
+
+.price-upper h4 {
+  font-weight: 600;
+  font-size: calc(16px + 0.35vw);
+  background: linear-gradient(135deg, #754799 0%, rgba(255, 51, 134, 0.9) 25%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.price-upper h6 {
+  font-size: calc(18px + 1.25vw);
+  font-weight: bold;
+  color: #4d1a6c !important;
+  letter-spacing: 1px;
+}
+
+.tick-icon {
+  min-height: 25px;
+  min-width: 25px;
+  border-radius: 50%;
+  background-color: #57ab36;
+  color: #fff;
+  font-weight: lighter !important;
+}
+
+.price-lower p {
+  font-size: calc(14px + 0.15vw);
+  color: #464646;
+}
+
+.price-border {
+  background-color: #464646;
+  height: 1px;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.additional-wrapper p {
+  color: #1e1e1e !important;
+  opacity: 0.8 !important;
+  font-size: calc(14px + 0.2vw) !important;
+  font-weight: bold !important;
+}
+
+.additional-wrapper li {
+  margin: 0.5rem 0;
+}
+
+#icon-click {
+  cursor: pointer;
 }

@@ -10,7 +10,6 @@ fetch(`json/India.json`)
   .then((res) => res.json())
   .then((data) => {
     const count = data.length
-    console.log(count)
 
     for (let info = 0; info < count; info += 3) {
       // testimonial wrapper
@@ -210,7 +209,7 @@ fetch(`json/projects/India.json`)
   .then((res) => res.json())
   .then((data) => {
     const count = data.length
-    console.log(count / 3)
+
     for (let info = 0; info < count; info += 3) {
       //  test carousel div
       var projectCarousel = document.createElement("div")
@@ -405,3 +404,17 @@ fetch(`json/projects/India.json`)
     }
     // for each ends
   })
+
+// logic for pricing display
+const handleClick = () => {
+  const icon = document.querySelectorAll("#icon-click")
+  console.log(icon)
+  const priceBottom = document.querySelectorAll(".price-bottom")
+  for (let i = 0; i < icon.length; i++) {
+    icon[i].addEventListener("click", function () {
+      console.log("clicked")
+    })
+  }
+}
+
+handleClick()

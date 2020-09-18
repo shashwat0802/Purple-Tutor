@@ -94,4 +94,16 @@
   .card {
     height: 230px !important;
   }
+  .price-upper h4 {
+    font-weight: 600;
+    font-size: calc(16px + 0.35vw);
+    background: linear-gradient(
+      135deg,
+      #754799 0%,
+      rgba(255, 51, 134, 0.9) 85%
+    ) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+  }
 }
